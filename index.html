@@ -96,6 +96,20 @@
         This page was built by
         <a href="https://www.delac.io/" target="_blank"> Matt Delac </a>
       </p>
+      <script>
+        function buy() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+            let emoji = prompt("What is your favorite emoji?");
+
+            alert(
+                "Thank you " + name + "! We'll be in touch by email, meanwhile have a lot of yogurt! " + emoji
+            );
+        }
+
+        let buyButton = document.querySelector(".buy-button");
+        buyButton.addEventListener("click", buy);
+      </script>
     </div>
   </body>
 </html>
